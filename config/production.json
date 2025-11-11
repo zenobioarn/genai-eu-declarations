@@ -4,8 +4,8 @@
       "versions": {
         "storage": {
           "git": {
-            "snapshotIdentiferTemplate": "https://github.com/OpenTermsArchive/demo-snapshots/commit/%SNAPSHOT_ID",
-            "repository": "git@github.com:OpenTermsArchive/demo-versions.git",
+            "snapshotIdentiferTemplate": "https://github.com/OpenTermsArchive/genai-eu-snapshots/commit/%SNAPSHOT_ID",
+            "repository": "git@github.com:OpenTermsArchive/genai-eu-versions.git",
             "path": "./data/versions"
           }
         }
@@ -13,7 +13,7 @@
       "snapshots": {
         "storage": {
           "git": {
-            "repository": "git@github.com:OpenTermsArchive/demo-snapshots.git",
+            "repository": "git@github.com:OpenTermsArchive/genai-eu-snapshots.git",
             "path": "./data/snapshots"
           }
         }
@@ -31,26 +31,19 @@
     "reporter": {
       "type": "github",
       "repositories": {
-        "declarations": "OpenTermsArchive/demo-declarations",
-        "versions": "OpenTermsArchive/demo-versions",
-        "snapshots": "OpenTermsArchive/demo-snapshots"
+        "declarations": "OpenTermsArchive/genai-eu-declarations",
+        "versions": "OpenTermsArchive/genai-eu-versions",
+        "snapshots": "OpenTermsArchive/genai-eu-snapshots"
       }
     },
     "dataset": {
-      "title": "demo",
-      "versionsRepositoryURL": "https://github.com/OpenTermsArchive/demo-versions"
+      "title": "genai-eu",
+      "versionsRepositoryURL": "https://github.com/OpenTermsArchive/genai-eu-versions"
     },
     "collection-api": {
       "port": 3000,
       "basePath": "/collection-api"
     },
-    "logger": {
-      "timestampPrefix": false
-    }
-  },
-  "@opentermsarchive/federation-api": {
-    "port": 3003,
-    "basePath": "/federation-api",
     "logger": {
       "timestampPrefix": false
     }
