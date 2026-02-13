@@ -9,14 +9,14 @@
     },
     "Privacy Policy": {
       "select": [
-        "main"
+        {
+          "startBefore": "#main-content",
+          "endBefore": "footer"
+        }
       ],
       "combine": [
         {
-          "fetch": "https://www.anthropic.com/legal/privacy",
-          "filter": [
-            "removeRedirectFromLinks"
-          ]
+          "fetch": "https://www.anthropic.com/legal/privacy"
         },
         {
           "fetch": "https://www.anthropic.com/legal/non-user-privacy-policy"
