@@ -16,10 +16,16 @@
       ],
       "combine": [
         {
-          "fetch": "https://www.anthropic.com/legal/privacy"
+          "fetch": "https://www.anthropic.com/legal/privacy",
+          "filter": [
+            "removeRedirectFromLinks"
+          ]
         },
         {
-          "fetch": "https://www.anthropic.com/legal/non-user-privacy-policy"
+          "fetch": "https://www.anthropic.com/legal/non-user-privacy-policy",
+          "filter": [
+            "removeRedirectFromLinks"
+          ]
         }
       ],
       "executeClientScripts": true
